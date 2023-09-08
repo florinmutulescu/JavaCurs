@@ -23,6 +23,9 @@ public class SalaryCalculator {
 		SalaryCalculator salCalc = new SalaryCalculator();
 		salCalc.caculateSalary(tester3.ratePerHour);
 
+		Tester tester4 = new Tester("Ana", "Junior");
+		System.out.println(tester4.nume + " este de senioritate " + tester4.senioritate + "!");
+
 	}
 
 	public int caculateSalary(int ratePerHour) {
