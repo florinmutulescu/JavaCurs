@@ -12,13 +12,19 @@ public class ComparareaStringurilor {
 		System.out.println("Case==");
 		System.out.println(first == second);
 		System.out.println("Compare cu equals");
+		System.out.println(first.equals(second));
+
 		System.out.println("--------------");
+		System.out.println("Compare cu ==");
+		System.out.println(first == third);
 		System.out.println("Compare cu equals");
-		System.out.println("Compare cu equals");
+		System.out.println(first.equals(third));
 		System.out.println("--------------");
+
 		System.out.println("Case==");
-		System.out.println(first == second);
+		System.out.println(first == fourth);
 		System.out.println("Compare cu equals");
+		System.out.println(first.equals(fourth));
 		System.out.println("--------------");
 	}
 
