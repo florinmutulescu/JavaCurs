@@ -7,7 +7,7 @@ import java.util.Scanner;
  * si printam corespunzator
  * Ex.first number is the greatest
  * daca 2 numere sunt egale si au valorile cele mai mari
- * printam:some numbers are equal
+ * printam: some numbers are equal
  */
 
 public class GreatesOfThreeNumbers {
@@ -26,18 +26,18 @@ public class GreatesOfThreeNumbers {
 
 	public void compareThreeNumbers() {
 		askTheUserForThreeNumbers();
-		if ((num1 == num2 && num1 > num3) || (num2 == num3 && num2 > num1) || (num1 == num3 && num1 > num2))
-			if (num1 > num2 && num1 > num3) {
-				System.out.println("First number is the greatest!");
-			} else if (num2 > num1 && num2 > num3) {
-				System.out.println("Second number is the greatest!");
-			} else if (num3 > num1 && num3 > num2) {
-				System.out.println("Third number is the greatest!");
-				// } else if ((num1 == num2 && num1 > num3) || (num2 == num3 && num2 > num1)
-				// || (num1 == num3 && num1 > num2))
-			} else {
-				System.out.println("Some numbers are equal!");
-			}
+
+		if (num1 > num2 && num1 > num3) {
+			System.out.println("First number is the greatest!");
+		} else if (num2 > num1 && num2 > num3) {
+			System.out.println("Second number is the greatest!");
+		} else if (num3 > num1 && num3 > num2) {
+			System.out.println("Third number is the greatest!");
+			// } else if ((num1 == num2 && num1 > num3) || (num2 == num3 && num2 > num1)
+			// || (num1 == num3 && num1 > num2))
+		} else {
+			System.out.println("Some numbers are equal!");
+		}
 
 	}
 

@@ -8,7 +8,7 @@ import java.util.Scanner;
  * intrebam userul  primul numar
  * intrebam userul operatia matematica
  * intrebam userul al doilea numar
- * Printam rezultatul
+ * Printam rezultatul:
  * Ex.2+2=4
  * 
  * 
@@ -19,7 +19,7 @@ public class SimpleCalculator {
 	char operator;
 	int result;
 	/*
-	 * masina masina.charAt(3)=i 012345
+	 * masina masina.charAt(3)==i 012345 masina.lenght==6
 	 */
 
 	private void askTheUser() {
