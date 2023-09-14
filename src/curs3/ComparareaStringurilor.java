@@ -6,7 +6,6 @@ public class ComparareaStringurilor {
 		String first = "Java";
 		String second = "automation";
 		String third = "Java";
-
 		String fourth = new String("Java");
 
 		System.out.println("Case==");

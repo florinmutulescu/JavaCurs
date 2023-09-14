@@ -15,7 +15,7 @@ public class VarstaTest {
 	public String verificaVarsta() {
 		if (varsta < 18) {
 			return "Esti minor!";
-		} else if ((varsta >= 18 && varsta <= 65)) {
+		} else if (varsta <= 65) {
 			return "Esti adult!";
 		} else {
 			return "Esti batran!";
