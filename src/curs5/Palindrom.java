@@ -14,6 +14,13 @@ public class Palindrom {
 
 	public void checkIfStringIsPalindrom() {
 		// radar
+		String cuvantNou = "";
+		for (int i = text.length() - 1; i >= 0; i--) {
+			cuvantNou = cuvantNou + text.charAt(i);
+			// cuvantNou +=text.charAt(i);
 
+		}
+		String result = text.equals(cuvantNou) ? "Este palindrom" : "Nu este palindrom";
+		System.out.println(result);
 	}
 }

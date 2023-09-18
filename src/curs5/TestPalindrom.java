@@ -1,6 +1,9 @@
 package curs5;
 
 public class TestPalindrom {
-	public void main
-
+	public static void main(String[] args) {
+		Palindrom obj = new Palindrom();
+		obj.askTheUser();
+		obj.checkIfStringIsPalindrom();
+	}
 }
