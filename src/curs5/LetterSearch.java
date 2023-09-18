@@ -3,8 +3,10 @@ package curs5;
 import java.util.Scanner;
 
 /*facem un program care cere un text de la tastatura
- * cautam in text daca exista 
- * 
+ * cautam in text daca exista litera A
+ * daca o gasim printam ca am gasit litera si
+ * de cate ori am gasit-o
+ * daca nu o gasim,printam ca nu am gasit
  * 
  */
 
@@ -34,10 +36,10 @@ public class LetterSearch {
 			System.out.println("Nu s-a gasit litera in text");
 
 		} else {
-			System.out.println("Litera A a fost gasita de " + counter);
+			System.out.println("Litera A a fost gasita de : " + counter);
 
 		}
-		String result = (counter == 0) ? "Nu s-a gasit litera A" : "Litera A a fost gasita de " + counter;
+		String result = (counter == 0) ? "Nu s-a gasit litera A" : "Litera A a fost gasita de : " + counter;
 		System.out.println(result);
 	}
 
