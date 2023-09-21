@@ -15,7 +15,8 @@ import java.util.Scanner;
 
 public class Tema2 {
 	int number;
-	int produs[] = new int[10];
+	// int produs[] = new int[10];
+	int produs;
 
 	public void askTheUser() {
 		Scanner scan = new Scanner(System.in);
@@ -27,8 +28,10 @@ public class Tema2 {
 	public void tablaInmultiri() {
 		System.out.println("Printam :");
 		for (int i = 1; i < 11; i++) {
-			produs[i - 1] = number * i;
-			System.out.println(number + "*" + i + "=" + produs[i - 1]);
+			// produs[i - 1] = number * i;
+			produs = number * i;
+			// System.out.println(number + "*" + i + "=" + produs[i - 1]);
+			System.out.println(number + "*" + i + "=" + produs);
 		}
 	}
 

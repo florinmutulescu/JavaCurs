@@ -14,21 +14,23 @@ import java.util.Scanner;
 
 public class Tema1 {
 	int suma = 0;
-	int[] number = new int[10];
+	// int[] number = new int[10];
+	int number;
 
 	public void askTheUser() {
 		Scanner scan = new Scanner(System.in);
 		for (int i = 1; i < 11; i++) {
 			System.out.println("Please enter number:" + i);
-			number[i - 1] = scan.nextInt();
-
+			// number[i - 1] = scan.nextInt();
+			number = scan.nextInt();
 		}
 		scan.close();
 	}
 
 	public void calcSum() {
 		for (int i = 1; i < 11; i++) {
-			suma += number[i - 1];
+			// suma += number[i - 1];
+			suma += number;
 		}
 		System.out.println("The sum of numbers is :" + suma);
 	}
