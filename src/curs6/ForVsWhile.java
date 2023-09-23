@@ -9,7 +9,8 @@ public class ForVsWhile {
 	 */
 
 	public static void main(String[] args) {
-		rezolvareCuFor();
+		// rezolvareCuFor();
+		rezolvareCuWhile();
 
 	}
 
