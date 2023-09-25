@@ -14,7 +14,7 @@ public class DoWhileExample {
 		System.out.println("------------------");
 
 		int j = 0;
-		while (j > array.length) {
+		while (j < array.length) {
 			System.out.println(array[j]);
 			j++;
 		}
