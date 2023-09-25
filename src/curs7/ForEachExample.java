@@ -7,6 +7,7 @@ public class ForEachExample {
 		for (String obj : orase) {
 			System.out.println(obj);
 		}
+
 	}
 
 }

@@ -2,15 +2,16 @@ package curs7;
 
 import java.util.Scanner;
 
-public class switchExample {
+public class SwitchExample {
 	/*
 	 * Intrebam userul un calificativ In functie de calificativ printam
-	 * A-->Felicitari B-->Destul de bine C-->Suficient D-->Insuficient
-	 * 
+	 * A-->Felicitari B-->Destul de bine C-->Suficient D-->Insuficient Daca
+	 * introduce orice altceva ii spunem Nota invalida
 	 * 
 	 */
 
 	public static void main(String[] args) {
+
 		Scanner scan = new Scanner(System.in);
 		System.out.println("Te rog introdu un calificativ:");
 		String calificativ = scan.next();
