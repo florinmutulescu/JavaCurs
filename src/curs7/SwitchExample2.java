@@ -6,16 +6,16 @@ public class SwitchExample2 {
 	/*
 	 * Facem un program care verifica daca un student este eligibil pt o bursa
 	 * 
-	 * 
+	 * Conditiile sunt: -sa fie anul 3 -sa aiba un punctaj de 80 pentru bursa 1 -sa
+	 * aiba un punctaj de 50 pentru bursa 2
 	 * 
 	 */
 
 	public static void main(String[] args) {
+
 		Scanner scan = new Scanner(System.in);
-		System.out.println("Te rog introdu ce an esti:");
+		System.out.println("Te rog introdu ce an esti :");
 		int an = scan.nextInt();
-		System.out.println("Te rog introdu ce punctaj ai:");
-		int punctaj = scan.nextInt();
 
 		switch (an) {
 		case 1:
@@ -23,7 +23,8 @@ public class SwitchExample2 {
 			System.out.println("Nu esti eligibil");
 			break;
 		case 3:
-			System.out.println("Te rog introdu un punctaj valid!");
+			System.out.println("Te rog introdu ce punctaj ai:");
+			int punctaj = scan.nextInt();
 			switch (punctaj) {
 			case 80:
 				System.out.println("Eligibil pentru bursa 1");
@@ -33,11 +34,10 @@ public class SwitchExample2 {
 				break;
 			default:
 				System.out.println("Te rog introdu un punctaj valid!");
-
 			}
 			break;
 		default:
-			System.out.println("Te rog introdu un an valid");
+			System.out.println("Te rog sa introduci un an valid");
 		}
 
 	}
