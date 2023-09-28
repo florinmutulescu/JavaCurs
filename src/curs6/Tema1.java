@@ -43,6 +43,7 @@ public class Tema1 {
 	public void verifPassword() {
 		if (username.equals("TestUser") && (password == 1234)) {
 			System.out.println("Login Sucessful");
+			valid = true;
 		} else {
 			System.out.println("Login Errror");
 			counter++;
