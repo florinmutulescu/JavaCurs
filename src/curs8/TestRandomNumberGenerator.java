@@ -5,7 +5,7 @@ public class TestRandomNumberGenerator {
 	public static void main(String[] args) {
 		RandomNumberGenerator obj = new RandomNumberGenerator();
 		obj.generateNumbers();
-
+		obj.printArray();
 	}
 
 }

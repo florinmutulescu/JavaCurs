@@ -1,6 +1,7 @@
 package curs8;
 
 public class TesterAutomat extends Tester {
+
 	private String programmingLanguage;
 
 	public String getProgrammingLanguage() {

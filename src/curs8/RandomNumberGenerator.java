@@ -13,14 +13,19 @@ import java.util.Random;
  * o metoda pentru print array
  */
 public class RandomNumberGenerator {
+	int age;// valoare default pentru Numerice==0
+	String nume;// valoare default String ==null
 
 	final int LENGHT = 6;
 	final int MAX_NUMBERS = 9;
+
 	int[] numbers = new int[LENGHT];
 
 	public void generateNumbers() {
 		Random random = new Random();
+
 		System.out.println(random.nextInt(MAX_NUMBERS));
+
 		for (int i = 0; i < LENGHT; i++) {
 
 			// numbers[i]=random.nextInt(MAX_NUMBERS);
@@ -29,23 +34,16 @@ public class RandomNumberGenerator {
 			do {
 				randomNR = random.nextInt(MAX_NUMBERS);
 
-			} while (!checkDuplicateNumber(numbers, randomNR));
+			} while (checkDuplicateNumber(numbers, randomNR));
 			numbers[i] = randomNR;
 			/*
 			 * if(!checkDuplicateNumber(numbers,randomNR)){ numbers[i]=randomNR;
 			 * System.out.println(numbers[i]); System.out.println(Arrays.toString(numbers));
+			 * 
+			 * 
+			 * System.out.println(numbers[i]); System.out.println(Arrays.toString(numbers));
 			 */
-
-			// System.out.println(numbers[i]);
-			// System.out.println(Arrays.toString(numbers));
 		}
-	}
-
-	public void printArray() {
-		for (int nr : numbers) {
-			System.out.println(nr + "|");
-		}
-
 	}
 
 	public boolean checkDuplicateNumber(int[] array, int nr) {
@@ -55,6 +53,13 @@ public class RandomNumberGenerator {
 			}
 		}
 		return false;
+	}
+
+	public void printArray() {
+		for (int nr : numbers) {
+			System.out.print(nr + "|");
+		}
+
 	}
 
 }

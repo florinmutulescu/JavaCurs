@@ -7,10 +7,11 @@ public class TestMostenire {
 
 		TesterAutomat testerAutomat = new TesterAutomat();
 
-		testerAutomat.setProgrammingLanguage("Java");//
+		testerAutomat.setProgrammingLanguage("Java");// clasa
+		// TesterAutomat();
 		testerAutomat.setDepartament("QA");// clasa Tester();
-		testerAutomat.setEmail("bob.com");// clasa Angajat();
 		testerAutomat.setSeniority("Juniro");// clasa Tester();
+		testerAutomat.setEmail("bob@bob.com");// clasa Angajat();
 		testerAutomat.setNume("Bob");// clasa Angajat()
 	}
 
