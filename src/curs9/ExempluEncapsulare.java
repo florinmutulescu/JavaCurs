@@ -19,7 +19,7 @@ public class ExempluEncapsulare {
 		} else {
 
 			// System.out.println("Valoarea trebuie sa fie mai mare ca zero");
-			throw new IllegalArgumentException("Valoarea tb.>0");
+			throw new IllegalArgumentException("Valoarea trebuie sa fie ma mare ca zero!");
 		}
 	}
 }
