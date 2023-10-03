@@ -9,14 +9,15 @@ public class TestWildAnimal {
 		 * 
 		 * System.out.println("------------------");
 		 * 
-		 * Deer bambi = new Deer(); bambi.makeSound();//metoda suprascrisa
+		 * Deer bambi = new Deer(); bambi.makeSound();// metoda suprascrisa
 		 * bambi.eatGrass();
 		 * 
 		 * System.out.println("------------------");
 		 * 
-		 * Lion simba = new Lion(); simba.makeSound();//metoda suprascrisa
-		 * simba.eatMeat(); System.out.println("----------------------");
-		 */
+		 * Lion simba = new Lion(); simba.makeSound();// metoda suprascrisa
+		 * simba.eatMeat();
+		 */System.out.println("----------------------");
+
 		// WebDriver browser = new ChromeDriver();
 
 		WildAnimal simba = new Lion();
@@ -26,9 +27,9 @@ public class TestWildAnimal {
 
 		// ((Lion)simba).eatMeat();//Lion simba = new Lion();
 
-		simba = new Deer();
-		simba.makeSound();
-		((Deer) simba).eatGrass();
+		// simba = new Deer();
+		// simba.makeSound();
+		// ((Deer) simba).eatGrass();
 
 	}
 

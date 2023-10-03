@@ -8,6 +8,6 @@ public class Deer extends WildAnimal {
 	}
 
 	public void eatGrass() {
-		System.out.println("I eat grass and i like it");
+		System.out.println("I eat grass and I like it");
 	}
 }
