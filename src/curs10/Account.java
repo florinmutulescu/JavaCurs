@@ -14,7 +14,7 @@ public class Account {
 	public void withdraw(double amount) {
 		try {
 			if (amount > balance) {
-				throw new InsufficientFundsException("Fonduri insuficiente! ");
+				throw new InsufficientFundsException();
 			}
 		} catch (InsufficientFundsException e) {
 			System.out.println(e.getMessage());
