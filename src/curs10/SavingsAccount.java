@@ -11,18 +11,27 @@ public class SavingsAccount extends Account {
 
 	public void withdraw(double amount) {
 		try {
+			if (amount < 0) {
+				System.out.println("Introduceti o suma pozitiva");
+				System.out.println("Thank you for using our ATM !");
+				System.exit(-1);
+			}
+
 			if (amount > balance) {
-				throw new InsufficientFundsException("fonduri insuficiente");
+
+				throw new InsufficientFundsException();
 			} else {
 				balance = balance - amount;
 				System.out.println("Pick your money!");
 				System.out.println("Your new balance is :" + balance);
-				System.out.println("Thank you for using our ATM! ");
+
 			}
 		} catch (InsufficientFundsException e) {
 			System.out.println(e.getMessage() + balance);
-			System.out.println("Thank you for using our ATM !");
+
 			e.printStackTrace();
+		} finally {
+			System.out.println("Thank you for using our ATM !");
 		}
 	}
 
