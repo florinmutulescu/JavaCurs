@@ -1,7 +1,9 @@
 package curs11;
 
+import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.Properties;
 
@@ -17,6 +19,22 @@ public class PropertiesFileProcessor {
 
 			propFile.store(outPutStream, "am salvat fisierul");
 			// outPutStream.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void readPropertiesFile(String key) {
+		try (InputStream inputStream = new FileInputStream("test.properties")) {
+			// propFile.load(inputStream);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void updatePropertiesFile(String key, String value) {
+		try (InputStream inputStream = new FileInputStream("test.properties")) {
+			// propFile.load(inputStream);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
