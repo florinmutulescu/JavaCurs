@@ -15,7 +15,7 @@ public class Tema11 {
 			OutputStream outputStream = new FileOutputStream("tema11.properties");
 			Properties propFile = new Properties();
 			propFile.setProperty("morcov", "58");
-			propFile.setProperty("ceapa ", "20");
+			propFile.setProperty("ciuperci", "35");
 			propFile.setProperty("ridichi", "26");
 			propFile.setProperty("castraveti", "19");
 			propFile.setProperty("rosii", "25");
