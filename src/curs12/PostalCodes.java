@@ -17,11 +17,14 @@ public class PostalCodes {
 	}
 
 	public String findCity(int codPostal) throws PostalCodeException {
+
 		if (map.containsKey(codPostal)) {
+
 			return map.get(codPostal);
 		} else {
-			throw new PostalCodeException("this postal code does not exists");
+			throw new PostalCodeException("This postal code does not exist!");
 		}
+
 	}
 
 }

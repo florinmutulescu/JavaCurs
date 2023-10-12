@@ -17,16 +17,19 @@ public class SetExample {
 		set.add("alb");
 		set.add("portocaliu");
 		set.add("verde");
+
 		for (String element : set) {
 			System.out.println(element);
 		}
 		System.out.println("-------------");
 		System.out.println(set.contains("mov"));
+
 		set.remove("alb");
 		// set.equals(set);
-		// set.removeAll(set);
-
-		// set.clear();
+		System.out.println(set);
+		set.removeAll(set);
+		System.out.println(set);
+		set.clear();
 	}
 
 }

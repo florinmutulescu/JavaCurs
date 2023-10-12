@@ -16,26 +16,41 @@ public class MapExample {
 		map.put("D", "Developer");
 		map.put("M", "Meneger");
 		map.put("P", "ProductOwner");
+
 		System.out.println(map.size());
+
 		System.out.println(map.get("T"));
+
 		System.out.println(map);
 		map.put("T", "Automation");
 		System.out.println(map);
 		System.out.println("-------------------");
-		System.out.println("contains key :" + map.containsKey("X"));
 
-		System.out.println("contains key :" + map.containsValue("Automation"));
+		System.out.println("contains key :" + map.containsKey("X"));
+		System.out.println("contains value :" + map.containsValue("Automation"));
+
 		System.out.println("-------------------");
+
 		for (String key : map.keySet()) {
 			System.out.println(key);
-			System.out.println("-------------------");
-			for (String value : map.values()) {
-				System.out.println(value);
-			}
-
-			System.out.println("-------------------");
-
 		}
+		System.out.println("-------------------");
+
+		for (String value : map.values()) {
+			System.out.println(value);
+		}
+
+		System.out.println("-------------------");
+
+		System.out.println(map.size());
+		map.remove("T");
+		System.out.println(map.size());
+
+		for (String value : map.values()) {
+			System.out.println(value);
+		}
+		System.out.println("---------------------------");
+
 		map.replace("D", "Director");
 		for (String value : map.values()) {
 			System.out.println(value);
